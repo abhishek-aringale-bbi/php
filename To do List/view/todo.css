@@ -1,0 +1,58 @@
+body {
+  background-color: aliceblue;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.add {
+  display: flex;
+  justify-content: center;
+  margin-top: 17px;
+}
+
+.info {
+}
+
+#save {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 6%;
+  background-color: green;
+  color: white;
+}
+.row {
+  border-top: 1px solid #ccc;
+  position: relative;
+  padding: 14px 0px;
+}
+
+.add input[type="text"] {
+  width: 83vw;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#remove {
+  /* margin-top: 8px; */
+  position: absolute;
+  right: 12%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: red;
+  color: white;
+}
+#remove:hover {
+  cursor: pointer;
+}
+#edit {
+  position: absolute;
+  right: 37px;
+  width: 6%;
+  /* margin-top: 8px; */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: azure;
+}
