@@ -7,30 +7,13 @@
 <link rel="stylesheet" href="login.css">
 </head>
 <body>
-<?php
-    
-    require_once '../controller/config.php'; 
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
-        include 'Controller/config.php';
 
-        $username = $_POST["username"];
-        $password = $_POST["password"];
-        $email= $_POST["email"];
-        $sql = "INSERT INTO `users` (`username`, `password`, `email`) 
-        VALUES ('$username', '$password', '$email');";
-        echo sql;
-        $result = mysqli_query($conn, $sql);
-
-        header("location: login.php");
-
-    }
-?>
 
 
 
     <h1>SignUp</h1>
     <div class="container">
-    <form action="signup.php" method="post" id="form">
+    <form action="../controller/login_signup_process.php" method="post" id="form">
         <div class="box">
 
             <label for="username">UserName:</label>
@@ -52,6 +35,7 @@
         <div class="box">
             <button type="submit">Submit</button>
         </div>
+        <input type="text" name="signup" id="" style="display:none">
         <p>alredy a user?
         <a href="login.php">click here to Login</a>
         </p>
